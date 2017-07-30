@@ -1,0 +1,71 @@
+;***********************************************************
+;FINDVERPTS
+;**********************************************************
+;Program to draw wellbore traces as polylines
+;Programmer: Ozkaya
+;Date: July 2000
+;**********************************************************
+;Prepare FINDVERPTS.INP file. It should look like this 
+;fnm_welloc.prn
+;find_frdenbbl.prn
+;out_frdenbbl.prn
+;100
+;280000
+;3040000
+;320000
+;3100000   
+;1
+;3
+;
+;rows
+;1  Reference vertical well coordinates file name
+;2  Request file name to find coordinates given well name and md
+;3  Output file name with coordinates well name
+;4  scale
+;5  xorigin
+;6  yorigin
+;7  xrite
+;8  yup
+;9  unit of md 1 ft else m
+;10 buble size multiplier
+;
+;**********************************************************
+;The reference vertical coordinate file has the following format:
+;x		y		md		wellid
+;298370.00	3069225.00	0.00	      31101
+;298369.98	3069225.05	0.00       31101
+;298369.97	3069225.17	0.00  	31101
+;.....
+;300069.79	3070624.32	 0.00		33201
+;300069.85	3070624.39	 0.00  	33201
+;300069.91	3070624.47	 0.00		33201
+;300069.97	3070624.55	 0.00		33201
+;.......
+;endfile            
+;
+;The request file has the following format
+;    well id   md      side  size   color
+;   12400       0       0    5       3
+;   29100       0       0    2       3
+;   29500       0       0    3       3
+;   32900       0       0    1       3
+;......
+; endfile
+;side is polygon side 0 means circle
+;
+;***********************************************************	
+;***********************************************************
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

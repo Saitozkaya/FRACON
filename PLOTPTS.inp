@@ -1,0 +1,39 @@
+cormudloss.prn
+zl-
+100
+m
+378000
+2518000
+384000
+2526000
+1
+2
+3
+4
+5
+6
+0.5
+2000
+1
+1
+
+
+rows
+1  data file name
+2  well id tag
+3  scale
+4  unit
+5  xorigin
+6  yorigin
+7  xend
+8  yend
+9  x column
+10  y column
+11 well id column
+12 polygon side column
+13 polygon size column
+14 polygon color column
+15 letter size
+16 width between utm lines
+17 option >0 well id written 1 below >1 above
+18 bbscale scale for well symbols

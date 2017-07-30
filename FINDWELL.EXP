@@ -1,0 +1,35 @@
+;FINDWELL insert an arrow pointing to the searched well. 
+;The arrow must be kept as a .dwg file in the same folder as 
+;the main .dwg file. 
+;
+;The input file for FINDWELL is as follows. the file name 
+;(field1_wellloc in this example) must be the same containing 
+;well locations with coordinates that is used by th BAZDOK 
+;program to plot well locations. The scale and coordinates 
+;must also be identical to BAZDOK input file.
+;
+;***********************************
+;field1_welloc.prn
+;100
+;m
+;181500
+;2715500
+;231500
+;2845500
+;1
+;2
+;3
+;
+;
+;
+;rows
+;1  data file name
+;2  scale
+;3  unit
+;4  xorigin
+;5  yorigin
+;6  xrite
+;7  yup
+;8  east utmn coordinate
+;9  north utmn coordinate
+;10 well id column

@@ -1,0 +1,20 @@
+fnhortraj.prn
+mdmudloss.prn
+cormudloss.prn
+100
+378000
+2518000
+384000
+2526000   
+1
+
+
+rows
+1  horizontal wells trajecteory data file name
+2  input file- horizontal well ids md at anomaly other specs 
+2  scale
+3  xorigin
+4  yorigin
+5  xrite
+6  yup
+8 bubble  size multiplier

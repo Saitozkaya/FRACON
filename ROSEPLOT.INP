@@ -1,0 +1,31 @@
+dipaz2.PRN
+fnwelloc.prn
+126
+100
+m
+378000
+2518000
+384000
+2526000
+1
+2
+3
+25
+3
+2
+
+1 strike file name
+2 well file name
+3 well number
+4 scale
+5 unit
+6 xor
+7 yor
+8 xrt
+9 yrt
+10 xcol
+11 ycol
+12 zcol well id col
+13 rose size
+14 rose color
+15 strike 1 or dip azimuth 2

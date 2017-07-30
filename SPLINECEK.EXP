@@ -1,0 +1,46 @@
+;*************************************************************
+; SPLINECEK.LSP
+; programmer ozkaya/Bahrain Geoscience Center
+; Platform ACAD14+
+;*************************************************************
+; Extract splines and writes them to file
+; This program can be used to output manually drawn splines 
+; file format
+; the sequence number indicates which polyline the point belongs to..
+;x           y         spline id
+;295714.781 2641594.034  1
+;295225.258 2641570.108  1
+;294221.348 2641521.039  1
+;293576.754 2643277.431  1
+;293064.306 2645329.314  1
+;293585.942 2648189.415  1
+;291122.468 2651152.780  1
+;288015.630 2649661.490  1
+;286970.566 2648164.853  1
+;286437.961 2647402.108  1
+;291664.826 2641663.178  2
+;292436.350 2642046.795  2
+;293815.489 2642732.530  2
+;294833.993 2645078.093  2
+;295538.956 2647233.298  2
+;294401.428 2649718.879  2
+;295388.247 2650113.400  2
+;295610.936 2650202.429  2
+;.........................
+;.........................
+;end file
+;*************************************************************
+;The program expects an input file must be prepared which looks like this
+;yeniceri.plc
+;1
+;0
+;0
+;
+;
+;rows
+;1  data file name
+;2  borehole label
+;3  scale
+;4  xorigin
+;5  yorigin
+;

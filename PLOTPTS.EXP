@@ -1,0 +1,82 @@
+;*************************************************************
+;PLOTPTS.LSP
+;*************************************************************
+;program to generate WELL BASE MAPS
+; with options to print well id at all or above or below well
+;symbol and draw various well symbols, colors and sizes
+;
+;programmer sait Ismail Ozkaya
+;Platform: ACAD 2000
+;jULY 2005
+;
+; This program expects two files. A parameter input file "DOTPLOT.INP"
+; and a data file. The name of the data file is in the first row of
+; of the bubble.inp file. An example of PLOTPTS.inp file is shown below:
+;cutmn.prn
+;"UTMN-"
+;100
+;m
+;310000
+;2760000
+;344000
+;2810000
+;1
+;2
+;3
+;4
+;5
+;6
+;0.3
+;5000
+;1
+;0.5
+;;
+;
+;rows
+;1  data file name
+;2  scale
+;3  unit
+;4  xorigin
+;5  yorigin
+;6  xrite
+;7  yup
+;8  east utmn coordinate
+;9  north utmn coordinate
+;10 well id column
+;11 polygon side (0 draws a circle)
+;12 polygon size
+;13 polygon color
+;14 letter size
+;11 letter size
+;13 width between utm lines
+;14 option >0
+;15 scale for well symbols
+
+;The  data file for this program must be as follows
+; EW UTM    NS UTM    Well NO side  size color
+;-----------------------------------------------
+;339347.64          2799430.48     196       0       1       1
+;335843.86          2793233.47     216       0       1       1
+;338824.21          2801482.04     469       0       1       1
+;332393.99          2795086.23     557       0       1       1
+;319948.79          2798439.33     586       0       1       1
+;331693.12          2800466.47     590       0       1       1
+;332836.00          2789597.00     593       0       1       1
+;329117.24          2794330.93     594       0       1       1
+;331978.00          2797744.00     595       0       1       1
+;332620.24          2794563.78     596       0       1       1
+;328426.53          2800059.16     597       0       1       1
+;333461.00          2791583.84     598       0       1       1
+;329799.91          2791950.38     599       0       1       1
+;328939.09          2797141.04     600       0       1       1
+;323370.00          2792104.00     623       0       1       1
+;328577.00          2802933.00     627       0       1       1
+;337556.00          2790325.50     634       0       1       1
+;308040.00          2763646.00    1997       0       1       1
+;326010.31          2794324.38     527       0       1       1
+;.....
+;endfile
+; sides is the number of polygon  sides. 0 is circle
+;***********************************************************
+;************************************************************
+

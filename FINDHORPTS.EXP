@@ -1,0 +1,62 @@
+;***********************************************************
+;FINDHORPTS
+;**********************************************************
+;Program to draw wellbore traces as polylines
+;Programmer: Ozkaya
+;Date: July 2000
+;**********************************************************
+;Prepare FINDHORPTS.INP file. It should look like this 
+;fnm_hor.prn
+;find_horlcz.prn
+;out_horlcz.prn
+;100
+;280000
+;3040000
+;320000
+;3100000   
+;1
+;3
+;
+;
+;rows
+;1  horizontal wells trajecteory data file name
+;2  input file- horizontal well ids md at anomaly other specs 
+;3  scale
+;4  xorigin
+;5  yorigin
+;6  xrite
+;7  yup
+;8  unit 1 ft 2 m
+;9 bubble  size multiplier
+;**********************************************************
+;The horizontal trajectory data file has the following format:
+;x		y		md		wellid
+;298370.00	3069225.00	0.00	      31101
+;298369.98	3069225.05	76.00	      31101
+;298369.97	3069225.17	169.00	31101
+;298369.98	3069225.31	265.00	31101
+;298369.93	3069225.45	357.00	31101
+;298369.85	3069225.53	438.00	31101
+;.....
+;300069.79	3070624.32	4251.97	33201
+;300069.85	3070624.39	4252.47	33201
+;300069.91	3070624.47	4252.97	33201
+;300069.97	3070624.55	4253.47	33201
+;300070.03	3070624.62	4253.97	33201
+;300070.09	3070624.70	4254.47	33201
+;300070.16	3070624.78	4254.97	33201
+
+;.......
+;endfile          
+;
+;The request file for finding coordinates for md has 
+;the following format 
+;  wellid       md           size     size   color 
+;  41701       14480.00       5       3       1
+;  72100       14300.00       5       3       1
+;  12300       17000.00       5       3       1
+;....
+; endfile
+;
+;***********************************************************	
+;***********************************************************

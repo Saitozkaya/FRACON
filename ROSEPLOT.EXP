@@ -1,0 +1,61 @@
+;************************************************************* 
+;ROSEPLOT.LSP
+;************************************************************* 
+; programmer ozkaya/Bahrain Geoscience Center
+; Platform ACAD14+
+;*************************************************************
+; Pgm to plot rose diagram at specified well location
+;The program expects an input file must be prepared which looks 
+;like this
+;100
+;m
+;378000
+;2518000
+;384000
+;2526000
+;1
+;2
+;3
+;10
+;1
+;2
+;
+;1 strike file name
+;2 well file name
+;3 well number
+;4 scale
+;5 unit
+;6 xor
+;7 yor
+;8 xrt
+;9 yrt
+;10 xcol
+;11 ycol
+;12 zcol -well id col
+;13 rose size
+;14 rose color
+;15 1 strike 2 dip azimuth plot
+;***********************************************************
+; data file STRIKE is a single column set of fracture 
+;strikes (between 0 and 180 degrees)
+;34
+;56
+;74
+;...
+;data for DIP AZIMUTH plot is also a single column. Values 
+;range between 0 and 360 deg.
+;24
+;245
+;311
+;...
+
+;Well locations file has the following format
+;    xutm             yutmn     well no   size     side    color
+;  382604.00      2523632.00      59       0       1       1
+;  381740.00      2524470.00      63       0       1       1
+;  382459.00      2524365.00      79       0       1       1
+;.....
+;This is the same as the well location file for  findwell and 
+;dotplot routines
+;
+;

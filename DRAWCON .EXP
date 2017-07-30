@@ -1,0 +1,68 @@
+;*******************************************************************
+;
+;DRAWCON
+;Program by I. ozkaya
+;Platform: AutoLISP
+;Date: MAY 2017
+;
+;*******************************************************************
+;This program is used to generate a contour map.
+
+;The example input file is shown below.
+;XXX_TOP.prn
+;1000
+;1800
+;100
+;55
+;259
+;181500
+;2715500
+;231500
+;2845500
+;100
+;2
+;0
+;10000
+;0
+;   
+;Columns
+;1  filename
+;2  mincon
+;3  maxcon
+;4  contint
+;5  imax
+;6  jmax
+;7  xor
+;8 yor
+;9 xrite
+;10 yup
+;11 scale
+;12 artmalik text size
+;13 notat (-1 no text written)
+;14 mazgal -distance between utmn lines
+;15 frameflg flag to draw frame with UTM divisions
+
+Example data file 
+pls note that positive z is downward The data is a regular grid with imax cells in x and jmax cells in y direction.
+
+        utme X            utmn  Y          elevation  Z
+        173277.55       2843609.75          1830.17
+        173758.84       2843751.75          1830.24
+        174240.13       2843893.75          1826.31
+        174721.41       2844036.00          1821.05
+        175202.67       2844178.00          1814.65
+        175683.86       2844319.75          1804.02
+        176165.02       2844461.75          1791.73
+        176646.11       2844603.75          1777.23
+        177127.25       2844745.75          1764.44
+        177608.38       2844887.75          1750.44
+        178089.56       2845029.75          1739.66
+        178570.77       2845171.75          1729.93
+        179052.00       2845313.75          1721.13
+        179533.23       2845455.75          1713.03
+        180014.47       2845597.75          1704.38
+        180495.69       2845739.75          1695.11
+        180976.91       2845881.75          1685.80
+        181458.14       2846023.75          1676.97
+
+

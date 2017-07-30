@@ -1,0 +1,32 @@
+;*************************************************************
+; LINECEK.LSP
+; programmer ozkaya/Bahrain Geoscience Center
+; Platform ACAD14+
+;*************************************************************
+; Extract lines and writes them to file
+; This program can be used to output fracture corridors
+; as sticks
+
+; file format
+; x1          y11          x2        y12     azimuth1 length1
+;380365.33 2519815.70   380316.32   2519900.57 149.99   98.01
+;380285.40 2519869.38   380239.08   2519949.57 149.99   92.61
+;380059.91 2519967.63   379963.72   2520134.22 125.00   192.37
+;380297.63 2519763.82   380033.32   2520221.62 87.00    528.63
+; .....
+;end file
+;*************************************************************
+;The program expects an input file must be prepared which looks like this
+;yeniceri.plc
+;1
+;0
+;0
+;
+;
+;rows
+;1  data file name
+;2  borehole label
+;3  scale
+;4  xorigin
+;5  yorigin
+;

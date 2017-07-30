@@ -1,0 +1,25 @@
+fnhortraj.prn
+100
+378000
+2518000
+384000
+2526000
+-1
+1.0
+2000
+
+
+
+
+
+rows
+1  data file name
+2  scale
+3  xorigin
+4  yorigin
+5  xrite
+6  yup
+7  color option >1 each contour has a different color
+8  text size for plotting contour values
+9  width between utm lines
+10 md unit 1 ft 2 m

@@ -1,0 +1,32 @@
+FNRES_TOP.prn
+1430
+1580
+20
+60
+80
+378000
+2518000
+384000
+2526000
+100
+2
+0
+2000
+1
+   
+Columns
+1  filename
+2  mincon
+3  maxcon
+4  contint
+5  imax
+6  jmax
+7  xor
+8 yor
+9 xrite
+10 yup
+11 scale
+12 artmalik
+13 notat (-1 no text written)
+14 mazgal -distance between utmn lines
+15 frameflg flag to draw frame with UTM divisions

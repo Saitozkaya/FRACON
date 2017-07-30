@@ -1,0 +1,48 @@
+;*************************************************************
+; POLYCEK.LSP
+; programmer ozkaya/Bahrain Geoscience Center
+; Platform ACAD14+
+;*************************************************************
+; Extract polylines and writes them to file
+; This program can be used to output fault traces or digitized
+; fault traces
+; file format
+; the sequence number indicates which polyline the point belongs to..
+;x           y      polyline id
+;286299.501 2645638.943  1
+;288861.011 2646226.664  1
+;289587.926 2646918.102  1
+;290314.841 2647920.686  1
+;291318.676 2648404.692  1
+;  
+;289241.776 2641317.459  2
+;290730.221 2643149.768  2
+;291353.291 2645016.649  2
+;293118.656 2646330.380  2
+;  
+;286091.811 2643011.481  3
+;289172.546 2643979.493  3
+;290349.456 2645846.374  3
+;291803.286 2647194.677  3
+;.................  
+;.................
+;endfile
+
+
+;end file
+;*************************************************************
+;The program expects an input file must be prepared which looks like this
+;yeniceri.plc
+;1
+;0
+;0
+;
+;
+;rows
+;1  data file name
+;2  borehole label
+;3  scale
+;4  xorigin
+;5  yorigin
+;
+;

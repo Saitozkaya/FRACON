@@ -1,0 +1,24 @@
+fnwelloc.prn
+100
+m
+378000
+2518000
+384000
+2526000
+1
+2
+3
+
+
+
+rows
+1  data file name
+2  scale
+3  unit
+4  xorigin
+5  yorigin
+6  xrite
+7  yup
+8  east utmn coordinate
+9  north utmn coordinate
+10 well id column
