@@ -1,20 +1,46 @@
-;;; Visual LISP make file [V1.0] FRACOR saved to:[F:/ongoing2017/conf&publ17/SUBMIT/FRACOR CANDG SUBMIT/FRACOR PACKAGE/LSP] at:[7/18/17] 
+;;; Visual LISP make file [V1.0] FRACOR saved to:[F:/ongoing2017/ACAD 2D FC MAP/00MAIN/VLX] at:[8/8/17] 
 (PRV-DEF (:target . "FRACOR.VLX")
 	 (:active-x . T)
 	 (:separate-namespace)
 	 (:protected . T)
 	 (:load-file-list
-	   (:lsp "FINDSTICKS.LSP")
-	   (:lsp "FINDVERPTS.LSP")
-	   (:lsp "FINDWELL.LSP")
-	   (:lsp "LINECEK.LSP")
-	   (:lsp "PLOTPTS.LSP")
-	   (:lsp "PLOTSTICKS.LSP")
-	   (:lsp "POLYCEK.LSP")
-	   (:lsp "ROSEPLOT.LSP")
-	   (:lsp "SPLINECEK.LSP")
-	   (:lsp "SPLINES.LSP")
-	   (:lsp "WELLTRACE.LSP")
+	   (:lsp "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/DRAWCON.lsp"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/FAULTRACE.LSP"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/FINDHORPTS.LSP"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/FINDSTICKS.LSP"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/FINDVERPTS.LSP"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/FINDWELL.LSP"
+	   )
+	   (:lsp "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/LINECEK.LSP"
+	   )
+	   (:lsp "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/PLOTPTS.LSP"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/PLOTSTICKS.LSP"
+	   )
+	   (:lsp "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/POLYCEK.LSP"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/ROSEPLOT.LSP"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/SPLINECEK.LSP"
+	   )
+	   (:lsp "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/SPLINES.LSP"
+	   )
+	   (:lsp
+	     "F:/ongoing2017/ACAD 2D FC MAP/00MAIN/LSP/WELLTRACE.LSP"
+	   )
 	 )
 	 (:require-file-list)
 	 (:ob-directory)

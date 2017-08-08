@@ -24,7 +24,8 @@
 ;0
 ;10000
 ;0
-;   
+;5000   
+
 ;Columns
 ;1  filename
 ;2  mincon
@@ -41,7 +42,8 @@
 ;13 notat (-1 no text written)
 ;14 mazgal -distance between utmn lines
 ;15 frameflg flag to draw frame with UTM divisions
-
+;16 maxcell maximum cell size the larger grids are decimated 
+;{keep the cell size between 500- 20000 otherwise mapping is very slow!
 
 ;************************************************************
 
@@ -108,7 +110,7 @@
    *tip1 *tip2
    &numberlist  &xg  &rfile &ans 
    &err &dosya &denek &linecnt &nline &rootfile
-   &altbay )
+   &altbay *maxcell)
  ;************************************************************
 
 
@@ -339,7 +341,12 @@
     (procure)
     (setq *frameflg (nth 0 &numberlist))
     (setq *frameflg (fix *frameflg))
-
+    
+    (readit)
+    (procure)
+    (setq *maxcell (nth 0 &numberlist))
+     
+    
 
 
     (close &rfile)
@@ -479,13 +486,25 @@
 
 
  ;************************************************************
-  (defun topludok ( / conval i j  k ip1 jp1 ip2 jp2 nulval tip1 tip2)
+  (defun topludok ( / conval i j  k ip1 jp1 ip2 jp2 nulval tip1 tip2 cellmax k)
 
 
 
  ;*********************************************************
 
- 
+(setq cellmax (* *imax *jmax))
+(setq k 1)
+ (while (> cellmax *maxcell)
+   (progn
+     (setq k (1+ k))
+     (setq cellmax (/ cellmax 4))
+   );end progn
+); end while
+
+(print "total number of cells. Keep between 500-20000")
+(print cellmax)
+(print "return to continue")
+(getreal) 
 
 
  (setq *renk 0)  
@@ -509,7 +528,7 @@
       
       (setq ip1 i)
       (setq jp1 j)
-      (setq ip2 (1+ i)) 
+      (setq ip2 (+ i k)) 
       (setq jp2 j)
 
      
@@ -521,7 +540,7 @@
          ip1 i 
          jp1 j
          ip2 i
-         jp2 (1+ j)
+         jp2 (+ j k)
        );end setq 
 
        (finofin ip1 ip2 jp1 jp2 conval nulval)
@@ -530,9 +549,9 @@
  
           (setq 
              ip1 i
-             jp1 (1+ j)
-             ip2 (1+ i)
-             jp2 (1+ j)
+             jp1 (+ j k)
+             ip2 (+ i k)
+             jp2 (+ j k)
           );end setq
  
           ( finofin ip1  ip2  jp1  jp2   conval  nullval)
@@ -541,20 +560,20 @@
       
 
 
-         (setq
-            ip1 (1+ i)
+         (setq 
+            ip1 (+ i k)
             jp1 j
-            ip2 (1+ i)
-           jp2 (1+ j)
+            ip2 (+ i k)
+           jp2 (+ j k)
          ); end setq
   
 
         (finofin ip1 ip2 jp1 jp2 conval nulval)
 
-       (setq i (1+ i))
+       (setq i (+ i k))
     );end while
 
-    (setq j (1+ j))
+    (setq j (+ j k))
    );end while
   (setq conval (+ conval *intercon))
  );end while
@@ -761,8 +780,7 @@
 
  (setq
    ptx  xpos
-   pty (- ydown
-(*  *artmalik))
+   pty (- ydown (*  *artmalik))
    ptext (list ptx pty)
   );end setq..
  

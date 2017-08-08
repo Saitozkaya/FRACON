@@ -24,7 +24,8 @@
 ;0
 ;10000
 ;0
-;   
+;10000   
+
 ;Columns
 ;1  filename
 ;2  mincon
@@ -41,6 +42,10 @@
 ;13 notat (-1 no text written)
 ;14 mazgal -distance between utmn lines
 ;15 frameflg flag to draw frame with UTM divisions
+;16 maxcell maximum cell size the larger grids are decimated 
+;{keep the cell size between 500-20000 otherwise mapping is very slow!
+
+
 
 Example data file 
 pls note that positive z is downward The data is a regular grid with imax cells in x and jmax cells in y direction.
