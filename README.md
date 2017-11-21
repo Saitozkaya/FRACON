@@ -1,4 +1,4 @@
-# FRACON
+# FRACOR
 Autolisp software toolbox for mapping fracture corridors on Autocad platform
 The FRACOR package comes as a collection of 4 folders
 EXAMPLE FIELD
